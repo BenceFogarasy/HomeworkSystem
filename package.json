@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "This is the server for my to do.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Bence Fogarasy",
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.8.2",
+    "express": "^4.17.1",
+    "nedb": "^1.8.0"
+  }
+}

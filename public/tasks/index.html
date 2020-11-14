@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <meta charset='utf-8'>
+     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+     <title>View Tasks</title>
+     <meta name='viewport' content='width=device-width, initial-scale=1'>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+ </head>
+ <body>
+   
+      <nav class="panel is-info" >
+        <p class="panel-heading" >
+          <a href="/" style="color:bisque">Add Tasks</a>
+        </p>
+        
+        <p class="panel-tabs" id="subjectsActive">
+          <a class="is-active" onclick="view(this,'All')">All</a>
+          <a onclick="view(this,'Maths')">Maths</a>
+          <a onclick="view(this,'Physics')">Physics</a>
+          <a onclick="view(this,'F. Maths')">Further Maths</a>
+          <a onclick="view(this,'Computing')">Computer Science</a>
+        </p>
+        <div id="sortingActive">
+        <a class="panel-block is-active" onclick="sortChange(this)" >
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          taskName
+        </a>
+        <a class="panel-block" onclick="sortChange(this)">
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          dateDue
+        </a>
+        <a class="panel-block" onclick="sortChange(this)">
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          dateAssigned
+        </a>
+        <a class="panel-block" onclick="sortChange(this)">
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          duration
+        </a>
+        <a class="panel-block" onclick="sortChange(this)">
+          <span class="panel-icon">
+            <i class="fas fa-code-branch" aria-hidden="true"></i>
+          </span>
+          important
+        </a>
+      </nav>
+    </div>
+      <div class="tile is-ancestor">
+        
+
+        <div class="tile is-1"></div>
+        <div class="tile is-vertical" id="container">
+          <!-- Dynamically generated boxes -->
+        </div>
+      </div>
+
+
+      
+      <script src="sketch.js"></script>
+    </body>
+ </html>
