@@ -2,8 +2,8 @@
 A homework sorting system for personal use.
 
 
-This system was based on a YouTube series detailing the making of a webserver in NodeJs. __
-It uses GET and POST requests to communicate between the client and server to store the data in a database. __
+This system was based on a YouTube series detailing the making of a webserver in NodeJs. <br />
+It uses GET and POST requests to communicate between the client and server to store the data in a database. <br />
 The client side uses *asycnhronous functions* to take full advantage of the power of JavaScript. 
 
 <a href="https://ibb.co/rsZ6LCg"><img src="https://i.ibb.co/FVBwfS9/Screenshot-2020-11-05-215814.png" alt="Screenshot-2020-11-05-215814" border="0"></a>
